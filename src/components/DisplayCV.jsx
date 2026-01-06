@@ -24,7 +24,7 @@
 export default function DisplayCV({ personal, education, experience }) {
 	return (
 		<main>
-			<h2>Resume</h2>
+			<h2>{personal.name}</h2>
 		</main>
 	);
 }
