@@ -38,36 +38,39 @@ export default function App() {
 		},
 	]);
 
-	if (editMode === true) {
-		return (
-			<>
-				<Header />
-				<EditPersonal
-					data={personalData}
-					onChange={(data) => setPersonalData(data)}
-				/>
-				<EditEducation
-					data={educationData}
-					onChange={(data) => setEducationData(data)}
-				/>
-				<EditExperience
-					data={experienceData}
-					onChange={(data) => setExperienceData(data)}
-				/>
-				<button onClick={() => toggleEditMode(false)}>Submit</button>
-			</>
-		);
-	}
-
 	return (
 		<>
 			<Header />
-			<DisplayCV
-				personal={personalData}
-				education={educationData}
-				experience={experienceData}
-			/>
-			<button onClick={() => toggleEditMode(true)}>Edit</button>
+			{editMode === true && (
+				<form>
+					<EditPersonal
+						data={personalData}
+						onChange={(data) => setPersonalData(data)}
+					/>
+					<EditEducation
+						data={educationData}
+						onChange={(data) => setEducationData(data)}
+					/>
+					<EditExperience
+						data={experienceData}
+						onChange={(data) => setExperienceData(data)}
+					/>
+					<button type="button" onClick={() => toggleEditMode(false)}>
+						Submit
+					</button>
+				</form>
+			)}
+
+			{editMode === false && (
+				<main>
+					<DisplayCV
+						personal={personalData}
+						education={educationData}
+						experience={experienceData}
+					/>
+					<button onClick={() => toggleEditMode(true)}>Edit</button>
+				</main>
+			)}
 		</>
 	);
 }
