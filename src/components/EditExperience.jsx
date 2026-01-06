@@ -20,7 +20,7 @@ export default function EditExperience({ data, onChange }) {
 		<section className="experience">
 			<h2>Experience</h2>
 			{data.map((exp, index) => (
-				<div key={index}>
+				<div key={exp.id}>
 					<label>
 						Company:{" "}
 						<input

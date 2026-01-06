@@ -19,7 +19,7 @@ export default function EditEducation({ data, onChange }) {
 		<section className="education">
 			<h2>Education</h2>
 			{data.map((edu, index) => (
-				<div key={index}>
+				<div key={edu.id}>
 					<label>
 						School:{" "}
 						<input

@@ -21,6 +21,7 @@ export default function App() {
 
 	const [educationData, setEducationData] = useState([
 		{
+			id: crypto.randomUUID(),
 			school: "",
 			location: "",
 			degree: "",
@@ -30,6 +31,7 @@ export default function App() {
 
 	const [experienceData, setExperienceData] = useState([
 		{
+			id: crypto.randomUUID(),
 			company: "",
 			title: "",
 			responsibilities: "",
