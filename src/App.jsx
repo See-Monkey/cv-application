@@ -44,23 +44,25 @@ export default function App() {
 		<>
 			<Header />
 			{editMode === true && (
-				<form>
-					<EditPersonal
-						data={personalData}
-						onChange={(data) => setPersonalData(data)}
-					/>
-					<EditEducation
-						data={educationData}
-						onChange={(data) => setEducationData(data)}
-					/>
-					<EditExperience
-						data={experienceData}
-						onChange={(data) => setExperienceData(data)}
-					/>
-					<button type="button" onClick={() => toggleEditMode(false)}>
-						Submit
-					</button>
-				</form>
+				<main>
+					<form>
+						<EditPersonal
+							data={personalData}
+							onChange={(data) => setPersonalData(data)}
+						/>
+						<EditEducation
+							data={educationData}
+							onChange={(data) => setEducationData(data)}
+						/>
+						<EditExperience
+							data={experienceData}
+							onChange={(data) => setExperienceData(data)}
+						/>
+						<button type="button" onClick={() => toggleEditMode(false)}>
+							Submit
+						</button>
+					</form>
+				</main>
 			)}
 
 			{editMode === false && (

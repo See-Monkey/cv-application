@@ -1,6 +1,29 @@
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 header {
 	background-color: var(--grape);
 	text-align: center;
 	padding: 20px;
+	color: var(--white);
+}
+
+main {
+	flex: 1;
+	background-image: linear-gradient(var(--copper), var(--bronze));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+button {
+	padding: 4px 20px;
+	box-shadow: 5px 5px 10px var(--copper);
+	background-color: var(--grape);
 	color: var(--white);
 }
