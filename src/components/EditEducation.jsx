@@ -19,43 +19,51 @@ export default function EditEducation({ data, onChange }) {
 		<section className="education">
 			<h2>Education</h2>
 			{data.map((edu, index) => (
-				<div key={edu.id}>
-					<label>
-						School:{" "}
-						<input
-							type="text"
-							name="school"
-							value={edu.school}
-							onChange={(e) => handleInputChange(e, index)}
-						/>
-					</label>
-					<label>
-						Location:{" "}
-						<input
-							type="text"
-							name="location"
-							value={edu.location}
-							onChange={(e) => handleInputChange(e, index)}
-						/>
-					</label>
-					<label>
-						Degree:{" "}
-						<input
-							type="text"
-							name="degree"
-							value={edu.degree}
-							onChange={(e) => handleInputChange(e, index)}
-						/>
-					</label>
-					<label>
-						Date Completed:{" "}
-						<input
-							type="text"
-							name="completedDate"
-							value={edu.completedDate}
-							onChange={(e) => handleInputChange(e, index)}
-						/>
-					</label>
+				<div key={edu.id} className="educationSection">
+					<div className="inputContainer">
+						<label>
+							School:{" "}
+							<input
+								type="text"
+								name="school"
+								value={edu.school}
+								onChange={(e) => handleInputChange(e, index)}
+							/>
+						</label>
+					</div>
+					<div className="inputContainer">
+						<label>
+							Location:{" "}
+							<input
+								type="text"
+								name="location"
+								value={edu.location}
+								onChange={(e) => handleInputChange(e, index)}
+							/>
+						</label>
+					</div>
+					<div className="inputContainer">
+						<label>
+							Degree:{" "}
+							<input
+								type="text"
+								name="degree"
+								value={edu.degree}
+								onChange={(e) => handleInputChange(e, index)}
+							/>
+						</label>
+					</div>
+					<div className="inputContainer">
+						<label>
+							Date Completed:{" "}
+							<input
+								type="text"
+								name="completedDate"
+								value={edu.completedDate}
+								onChange={(e) => handleInputChange(e, index)}
+							/>
+						</label>
+					</div>
 				</div>
 			))}
 		</section>
