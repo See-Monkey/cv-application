@@ -8,6 +8,8 @@
 //     zip: "",
 // }
 
+import "../styles/editMode.css";
+
 export default function EditPersonal({ data, onChange }) {
 	function handleInputChange(event) {
 		const { name, value } = event.target;

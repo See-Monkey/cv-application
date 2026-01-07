@@ -10,33 +10,33 @@ export default function App() {
 	const [editMode, toggleEditMode] = useState(true);
 
 	const [personalData, setPersonalData] = useState({
-		name: "",
-		email: "",
-		phone: "",
-		address: "",
-		city: "",
-		state: "",
-		zip: "",
+		name: "Spongebob Squarepants",
+		email: "sponge@bob.com",
+		phone: "714-986-1999",
+		address: "124 Conch St",
+		city: "Bikini Bottom",
+		state: "Ocean",
+		zip: "00001",
 	});
 
 	const [educationData, setEducationData] = useState([
 		{
 			id: crypto.randomUUID(),
-			school: "",
-			location: "",
-			degree: "",
-			completedDate: "",
+			school: "Mrs. Puff's Boating School",
+			location: "Bikini Bottom",
+			degree: "License",
+			completedDate: "Aug 1999",
 		},
 	]);
 
 	const [experienceData, setExperienceData] = useState([
 		{
 			id: crypto.randomUUID(),
-			company: "",
-			title: "",
-			responsibilities: "",
-			startDate: "",
-			endDate: "",
+			company: "Krusty Krab",
+			title: "Fry Cook / Waiter",
+			responsibilities: "-Making the patties good for my customers",
+			startDate: "May 1999",
+			endDate: "Present",
 		},
 	]);
 

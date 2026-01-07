@@ -14,8 +14,8 @@
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
-	font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-family: Inter, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 img,
 picture,
@@ -54,7 +54,4 @@ h6 {
 #root,
 #__next {
 	isolation: isolate;
-}
-:root {
-	/* declare global custom properties */
 }

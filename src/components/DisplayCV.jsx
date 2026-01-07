@@ -21,6 +21,8 @@
 //     endDate: "",
 // }
 
+import "../styles/displayCV.css";
+
 export default function DisplayCV({ personal, education, experience }) {
 	return (
 		<main>
