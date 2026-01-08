@@ -25,6 +25,10 @@ textarea {
 	border-radius: 4px;
 }
 
+textarea {
+	height: 105px;
+}
+
 .personal,
 .education,
 .experience {

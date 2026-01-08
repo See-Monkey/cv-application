@@ -70,7 +70,7 @@ export default function DisplayCV({ personal, education, experience }) {
 								{exp.startDate} - {exp.endDate}
 							</p>
 						</div>
-						<p>{exp.responsibilities}</p>
+						<p className="displayResp">{exp.responsibilities}</p>
 					</div>
 				))}
 			</div>

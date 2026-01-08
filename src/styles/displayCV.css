@@ -87,3 +87,7 @@
 	text-align: end;
 	padding-right: 40px;
 }
+
+.displayResp {
+	white-space: pre-wrap;
+}
