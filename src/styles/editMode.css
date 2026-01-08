@@ -1,0 +1,41 @@
+form {
+	flex: 1;
+	min-width: min(100%, 400px);
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 40px 10px;
+}
+
+.inputContainer {
+	padding: 6px;
+}
+
+label {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 6px;
+	color: var(--white);
+}
+
+input,
+textarea {
+	flex: 1 1 1;
+	border-radius: 4px;
+}
+
+.personal,
+.education,
+.experience {
+	background-color: var(--grape);
+	padding: 10px 20px 30px;
+	border-radius: 12px;
+	box-shadow: 5px 5px 10px var(--copper);
+	border-top: 1px solid var(--white);
+	border-left: 1px solid var(--white);
+}
+
+section h2 {
+	color: var(--white);
+}
