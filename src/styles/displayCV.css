@@ -38,6 +38,9 @@
 
 .educationSection {
 	margin-bottom: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
 }
 
 .educationContainer {
@@ -55,6 +58,12 @@
 	padding-right: 40px;
 }
 
+.experienceSection {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
 .experienceContainer {
 	padding-left: 40px;
 }
@@ -62,6 +71,10 @@
 .jobContainer {
 	display: flex;
 	gap: 60px;
+}
+
+.jobTitle {
+	font-style: italic;
 }
 
 .columnContainer {

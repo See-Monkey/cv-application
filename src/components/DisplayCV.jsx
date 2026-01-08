@@ -64,7 +64,7 @@ export default function DisplayCV({ personal, education, experience }) {
 						<div className="jobContainer">
 							<div className="columnContainer">
 								<h4>{exp.company}</h4>
-								<p>{exp.title}</p>
+								<p className="jobTitle">{exp.title}</p>
 							</div>
 							<p className="jobDates">
 								{exp.startDate} - {exp.endDate}

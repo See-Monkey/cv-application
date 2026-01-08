@@ -58,7 +58,11 @@ export default function App() {
 							data={experienceData}
 							onChange={(data) => setExperienceData(data)}
 						/>
-						<button type="button" onClick={() => toggleEditMode(false)}>
+						<button
+							id="submitBtn"
+							type="button"
+							onClick={() => toggleEditMode(false)}
+						>
 							Submit
 						</button>
 					</form>
@@ -72,7 +76,9 @@ export default function App() {
 						education={educationData}
 						experience={experienceData}
 					/>
-					<button onClick={() => toggleEditMode(true)}>Edit</button>
+					<button id="editBtn" onClick={() => toggleEditMode(true)}>
+						Edit
+					</button>
 				</main>
 			)}
 		</>

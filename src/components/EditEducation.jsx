@@ -15,6 +15,26 @@ export default function EditEducation({ data, onChange }) {
 		onChange(newData);
 	}
 
+	function addEducation() {
+		const newData = [...data];
+		newData.push({
+			id: crypto.randomUUID(),
+			school: "",
+			location: "",
+			degree: "",
+			completedDate: "",
+		});
+
+		onChange(newData);
+	}
+
+	function removeEducation() {
+		const newData = [...data];
+		newData.pop();
+
+		onChange(newData);
+	}
+
 	return (
 		<section className="education">
 			<h2>Education</h2>
@@ -66,6 +86,20 @@ export default function EditEducation({ data, onChange }) {
 					</div>
 				</div>
 			))}
+			<div className="buttonContainer">
+				{data.length > 1 && (
+					<button
+						id="removeEduBtn"
+						type="button"
+						onClick={() => removeEducation()}
+					>
+						-
+					</button>
+				)}
+				<button id="addEduBtn" type="button" onClick={() => addEducation()}>
+					+
+				</button>
+			</div>
 		</section>
 	);
 }
